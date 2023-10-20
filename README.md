@@ -40,7 +40,8 @@ Click here to check [Go](http://localhost:8000/home)
 to run the frontend, open the terminal and type
 
 ```
-cd frontend/src
+cd frontend
+cd src
 ```
 
 Run the frontend
