@@ -15,6 +15,8 @@ or you can just type in terminal to install all missing packages:
 # Testing
 After cloning the repo, open the source directory
 
+To run the server, open the terminal and type
+
 ```
 cd src
 ```
@@ -32,6 +34,24 @@ nodemon App.js
 ```
 
 Click here to check [Go](http://localhost:8000/home)
+
+---
+
+to run the frontend, open the terminal and type
+
+```
+cd frontend/src
+```
+
+Run the frontend
+
+```
+npm start
+```
+
+Click here to check [Go](http://localhost:3000/users)
+
+---
 
 ###  DB Connections
 
