@@ -74,7 +74,18 @@ const editBlog = async(req, res) => {
     3- update the blog with the new title and body
     4- send the updated blog as a response
     */
+    const blogId = req.params.id;
+    const{title,body} = req.body;
+
+    try{
+        const blog = await blogModel.findByIdAndUpdate(blogId,{title,body},{new:true});
+        res.status(200).json(blog)
+    }
+    catch(error){
+        res.status(400).json({error:error.message})
+    }
 }
+    
 
 
 module.exports = {createUser, getUsers, createBlog, filterBlog, editBlog, getBlogs};

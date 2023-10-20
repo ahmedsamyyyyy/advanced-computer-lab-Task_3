@@ -2,9 +2,10 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const cors = require('cors');
-// THIS IS WRONG NEVER DO THAT !! Only for the task we put the DB Link here!! NEVER DO THAAAT AGAIN !!
+require('dotenv').config();
+// add MONGO_URI in .env file
 //Check db connection links in README file
-const MongoURI = 'mongodb+srv://Hadwa:hadwa1996@cluster0.hpstsct.mongodb.net/?retryWrites=true&w=majority' ;
+const MongoURI = process.env.MONGO_URI;
 const {createUser, getUsers, createBlog, filterBlog, editBlog, getBlogs}= require('./Controller/userController')
 
 
@@ -39,6 +40,7 @@ app.get('/blogs', getBlogs);
 app.post("/addBlog",createBlog);
 app.get('/filter',filterBlog);
 // TODO : add the editBlog route here
+app.put('/editBlog/:id', editBlog);
 
 /*
                                                     End of your code
