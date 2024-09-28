@@ -84,9 +84,6 @@ Mabrouk's groups:
  ```
 mongodb+srv://gucACL:lab123456@mabrouk.klnokrh.mongodb.net/
 ```
-Amr's groups:
- ```
-mongodb+srv://aclLab:si3R6zZJzR6xZDze@adiabgudb.cdrbkot.mongodb.net/
-```
+
 
 ### **DO NOT COMMIT TO THIS REPO**
