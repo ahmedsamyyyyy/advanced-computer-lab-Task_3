@@ -36,7 +36,20 @@ or
 nodemon App.js
 ```
 
-Click here to check [Go](http://localhost:8000/home)
+Now in **another Terminal**, open the test directory
+
+```
+cd frontend
+cd src
+```
+
+Run the frontend
+
+```
+npm start
+```
+
+Click here to check [Go](http://localhost:3000/)
 
 ###  DB Connections
 
