@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+const { useState } = require("react");
 import axios from 'axios';
 import Button from '@mui/material/Button';
 import Table from '@mui/material/Table';
