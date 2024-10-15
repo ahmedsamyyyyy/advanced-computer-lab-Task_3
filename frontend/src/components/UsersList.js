@@ -1,14 +1,14 @@
-import axios from 'axios';
-import Button from '@mui/material/Button';
-import Table from '@mui/material/Table';
 import Box from '@mui/material/Box';
-import { styled } from '@mui/material/styles';  
+import Button from '@mui/material/Button';
+import Paper from '@mui/material/Paper';
+import { styled } from '@mui/material/styles';
+import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+import axios from 'axios';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -26,15 +26,15 @@ const UsersList = () => {
     const [authors,setAuthors] = useState([]);
     
     const getAuthors =  async () => {
-         await axios.get('http://localhost:8000/users').then(
+        await axios.get('http://localhost:8000/users').then(
         (res) => { 
             const authors = res.data
             console.log(authors)
             setAuthors(authors)
             
         }
-         );
-       
+        );
+      
     
 
     }
